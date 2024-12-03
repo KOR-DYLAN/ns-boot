@@ -7,6 +7,9 @@
 #define DATA_ALIGN              1
 #define BSS_ALIGN               16
 
+#define PLAT_NUM_CPUS           4
+#define PLAT_STACK_SIZE         0x1000 * PLAT_NUM_CPUS
+
 OUTPUT_FORMAT(PLATFORM_LINKER_FORMAT)
 OUTPUT_ARCH(PLATFORM_LINKER_ARCH)
 ENTRY(image_entrypoint)
@@ -64,7 +67,7 @@ SECTIONS
 
     stacks (NOLOAD) : {
         __STACKS_START__ = .;
-        *(tzfw_normal_stacks)
+        . = . + PLAT_STACK_SIZE;
         __STACKS_END__ = .;
     } >RAM
 

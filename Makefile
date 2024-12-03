@@ -17,7 +17,6 @@ DIR_LISTS		+=driver
 DIR_LISTS		+=library
 DIR_LISTS		+=platform
 DIR_LISTS		+=boot
-DIR_LISTS		+=app
 
 ifeq ($(OS),Windows_NT)
     NATIVE_SOURCE_DIR:=$(shell cygpath -m $(SOURCE_DIR))

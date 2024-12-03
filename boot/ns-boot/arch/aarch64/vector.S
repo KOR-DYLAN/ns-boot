@@ -1,4 +1,6 @@
 #include <common/asm_macros.S>
+#include <lib/arch/aarch64/asm_macro_reg_io.S>
+#include <lib/arch/aarch64/asm_macro_vector.S>
 
     .globl  runtime_exceptions
 

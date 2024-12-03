@@ -1,4 +1,5 @@
 #include <common/asm_macros.S>
+#include <lib/arch/aarch64/asm_macro_reg_io.S>
 
     .globl  image_entrypoint
 
