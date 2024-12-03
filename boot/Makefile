@@ -1,1 +1,1 @@
-boot-$(CONFIG_BOOT_ARMV8A)	+=boot-armv8a
+boot-$(CONFIG_BOOT_NS)	+=ns-boot
