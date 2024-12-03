@@ -1,1 +1,0 @@
-app-$(CONFIG_APP_SAMPLE)	+=sample
